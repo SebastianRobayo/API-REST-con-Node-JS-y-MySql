@@ -1,0 +1,27 @@
+###
+GET http://localhost:5000/api HTTP/1.1
+
+###
+POST http://localhost:5000/api HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Procesador Amd Ryzen 5 5600x 4.6 Ghz",
+    "imagen": "https://www.amd.com/system/files/2020-09/616656-amd-ryzen-5-5000-series-PIB-fan-1260x709.png",
+    "descripcion": "procesador",
+    "precio": "355"
+}
+
+###
+PUT http://localhost:5000/api/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "titulo": "Procesador Amd Ryzen 5 5600x",
+    "imagen": "https://www.amd.com/system/files/2020-09/616656-amd-ryzen-5-5000-series-PIB-fan-1260x709.png",
+    "descripcion": "procesador",
+    "precio": "355"
+}
+
+###
+DELETE http://localhost:5000/api/2 HTTP/1.1
